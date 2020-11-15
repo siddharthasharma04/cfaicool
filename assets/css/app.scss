@@ -55,6 +55,7 @@ section {
         }
     }
     &#home-section {
+        padding-top: 50px;
         .carousel-inner {
             .carousel-item {
                 img {
@@ -125,6 +126,31 @@ section {
             img {
                 max-width: 80px;
                 margin-bottom: 20px;
+            }
+        }
+    }
+    &#activity-section {
+        background-image: url(../images/bg.png);
+        background-attachment: fixed;
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center center;
+        color: #fff;
+        background-color: $secondry;
+        .gallary-container {
+            .item-wrap {
+                max-height: 200px;
+                overflow: hidden;
+                border: 0.25rem solid $white;
+                border-radius: 0.25rem;
+                img {
+                    transition: all 500ms;
+                    border: 0;
+                    padding: 0;
+                    &:hover {
+                        transform: scale(1.5) rotate(10deg);
+                    }
+                }
             }
         }
     }

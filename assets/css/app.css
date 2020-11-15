@@ -55,6 +55,10 @@ section .even-section-inner .container-heading::after {
   border-width: 0 30px;
 }
 
+section#home-section {
+  padding-top: 50px;
+}
+
 section#home-section .carousel-inner .carousel-item img {
   width: 100%;
   -o-object-fit: cover;
@@ -135,5 +139,34 @@ section#facilities-section {
 section#facilities-section .service__thumb img {
   max-width: 80px;
   margin-bottom: 20px;
+}
+
+section#activity-section {
+  background-image: url(../images/bg.png);
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  color: #fff;
+  background-color: #ff8d00;
+}
+
+section#activity-section .gallary-container .item-wrap {
+  max-height: 200px;
+  overflow: hidden;
+  border: 0.25rem solid #fff;
+  border-radius: 0.25rem;
+}
+
+section#activity-section .gallary-container .item-wrap img {
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  border: 0;
+  padding: 0;
+}
+
+section#activity-section .gallary-container .item-wrap img:hover {
+  -webkit-transform: scale(1.5) rotate(10deg);
+          transform: scale(1.5) rotate(10deg);
 }
 /*# sourceMappingURL=app.css.map */
