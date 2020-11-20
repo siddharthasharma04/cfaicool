@@ -3,6 +3,7 @@ $primary: #000E67;
 $secondry:#ff8d00;
 $white:#fff;
 $offWhite: #e1e5ff;
+$drkGrey:#212529;
 blockquote {
     p {
         font-style: italic;
@@ -31,7 +32,13 @@ blockquote {
 // Sections
 section {
     background-color: $offWhite;
+    span {
+        &.high {
+            color: $secondry;
+        }
+    }
     .section-inner,
+    .odd-section-inner,
     .even-section-inner {
         padding: 3% 2.5%;
         @media screen and (max-width: 550px) {
@@ -110,6 +117,46 @@ section {
                 border-radius: 0;
                 &.active {
                     color: $secondry;
+                }
+            }
+        }
+    }
+    &#committee-section {
+        background-image: url(../images/22.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: #fff;
+        background-color: $primary;
+        .section-inner {
+            background-color: rgba(0, 0, 0, 0.8);
+            .roc-me {
+                padding-top: 6rem;
+            }
+            .person__thumb {
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.5);
+                // color: $drkGrey;
+                border-radius: 6px;
+                margin-bottom: calc(80px + 1.5rem);
+                padding-bottom: 12px;
+                img {
+                    margin-top: -75px;
+                    margin-bottom: 20px;
+                    border-radius: 50%;
+                    border: 6px solid $secondry;
+                    max-width: 150px;
+                    box-shadow: 0px 0px 0px 6px $primary, 2px 3px 10px 10px rgba(0, 0, 0, 0.5);
+                }
+                .footer {
+                    .name {
+                        .designation {
+                            color: $primary;
+                            display: block;
+                            margin-top: 0.5rem;
+                        }
+                    }
                 }
             }
         }
