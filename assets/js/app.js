@@ -7,7 +7,7 @@ function sendMail(e){
         email = $($this).find('#email').val(),
         phone = $($this).find('#phone').val(),
         msg = $($this).find('#message').val();
-    var url = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=cfaischool2013@gmail.com&su=Contact_us_from_website&body='+
+    var url = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=andrewsbro6@gmail.com&su=Contact_us_from_website&body='+
     "First Name: " + fName + "\n" +
     "Last Name: " + lName + "\n" +
     "Phone: " + phone + "\n" +
